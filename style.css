@@ -1,0 +1,114 @@
+body {
+    background-color: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.container{
+    background: #222;
+    padding : 25px;
+    border-radius: 15px;
+    box-shadow: 0 10 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+h1{
+    color: white;
+    margin-bottom: 15px;
+}
+
+#display{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: right;
+    padding : 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    border : none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: #555;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:nth-child(4n) {
+    background: #ff9500;
+}
+
+button:nth-child(12){
+    background: #00c853;
+}
+
+button:first-child {
+    background: red;
+}
+
+button:nth-child(2) {
+    background: orange;
+}
+
+#themeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#themeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#themeBtn {
+    background: #333;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+.dark {
+    --bg-color: black;
+    --text-color: white;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
