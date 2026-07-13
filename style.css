@@ -1,9 +1,9 @@
 body {
-    background-color: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-color: linear-gradient(135deg, #1f1c7c, #928dab);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 108vh;
     font-family: Arial, sans-serif;
     position: relative;
 }
